@@ -1,0 +1,111 @@
+/* styles.css - estilos simples para wireframes */
+:root{
+  --sidebar-width: 240px;
+  --bg: #f5f7fa;
+  --accent: #0d6efd;
+  --muted: #6c757d;
+}
+
+*{box-sizing:border-box}
+body{
+  font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  background: var(--bg);
+  margin:0;
+  color:#222;
+  -webkit-font-smoothing:antialiased;
+}
+
+.container-fluid{
+  padding:0 24px;
+}
+
+/* Topbar */
+.topbar{
+  height:60px;
+  background:#fff;
+  display:flex;
+  align-items:center;
+  padding:0 16px;
+  border-bottom:1px solid #e6e9ef;
+  justify-content:space-between;
+}
+
+/* Sidebar */
+.sidebar{
+  width:var(--sidebar-width);
+  background:#fff;
+  height:calc(100vh - 60px);
+  border-right:1px solid #e6e9ef;
+  padding:16px;
+  position:fixed;
+  top:60px;
+  left:0;
+}
+.sidebar .brand{
+  font-weight:700;
+  color:var(--accent);
+  margin-bottom:16px;
+}
+.nav-link{
+  display:block;
+  color:#333;
+  padding:8px 10px;
+  border-radius:6px;
+  margin-bottom:6px;
+  text-decoration:none;
+}
+.nav-link:hover{ background:#f1f5fb; color:var(--accent); }
+
+/* Main content */
+.main{
+  margin-left:var(--sidebar-width);
+  padding:24px;
+}
+
+/* Cards */
+.card-wire{
+  background:#fff;
+  border:1px dashed #dfe6ef;
+  padding:16px;
+  border-radius:8px;
+  margin-bottom:16px;
+}
+
+/* Tables */
+.table-wire{
+  width:100%;
+  border-collapse:collapse;
+}
+.table-wire th, .table-wire td{
+  text-align:left;
+  padding:10px 8px;
+  border-bottom:1px solid #f0f2f6;
+  font-size:14px;
+}
+
+/* Form */
+.form-wire label{ font-size:13px; color:var(--muted); }
+.form-wire .form-control{ border-radius:6px; }
+
+/* Buttons helper */
+.btn-ghost{
+  background:#fff;
+  border:1px solid #e6e9ef;
+  color:#333;
+  border-radius:6px;
+  padding:8px 12px;
+}
+.btn-primary{
+  background:var(--accent);
+  color:#fff;
+  border:none;
+  padding:8px 12px;
+  border-radius:6px;
+}
+
+/* Responsive */
+@media (max-width:900px){
+  .sidebar{ display:none; position:static; height:auto; }
+  .main{ margin-left:0; padding:16px; }
+  .topbar{ padding:0 12px; }
+}
