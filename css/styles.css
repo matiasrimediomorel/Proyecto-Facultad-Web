@@ -109,3 +109,32 @@ body{
   .main{ margin-left:0; padding:16px; }
   .topbar{ padding:0 12px; }
 }
+
+#contenedorCliente {
+    position: relative;
+
+  }
+
+ .filtroAutocompleto {
+    position: absolute;
+    border: 1px solid #ffffff;
+    border-top: none;
+    z-index: 99;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: white;
+  }
+
+  .filtroAutocompleto div {
+    padding: 8px;
+    cursor: pointer;
+  }
+
+  .filtroAutocompleto div:hover {
+    background-color: #f1f1f1;
+  }
+
+  #seleccion {
+    border: 1px solid #918080;
+  }
