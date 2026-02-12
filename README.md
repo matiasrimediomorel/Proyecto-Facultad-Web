@@ -14,13 +14,10 @@ Contenido:
 
 Cómo usar:
 1. Coloca todos los archivos en la misma carpeta (mantén la estructura de nombres).
-2. Abre `login.html` en tu navegador.
-3. Navega usando los links del sidebar o botones (en este wireframe los links son archivos locales).
-4. Si querés convertir a proyecto real más adelante, puedes:
-   - Importar el HTML como plantillas en una SPA,
-   - Reemplazar botones por llamadas a tu API,
-   - Añadir autenticación JWT y protección de rutas.
+2. Correr el proyecto "ProyectoFacultadWeb" del reporsitorio: https://github.com/matiasrimediomorel/Proyecto-Facultad
+3. Mientras este en ejecucion Abre `ventas.html` en tu navegador.
 
 Notas:
 - Estos wireframes usan Bootstrap CDN para acelerar el diseño visual.
-- Están hechos para ser una base visual/estructural; no contienen lógica JS ni llamadas al backend.
+- Están hechos para ser una base visual/estructural; no contienen lógica JS ni llamadas al backend (Esto se realizo con IA).
+- Se le agrega manualmente los JS y llamadas al BACKEND
